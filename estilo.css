@@ -1,52 +1,52 @@
+/* General */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
-    margin : 0;
-    color : #333;
+    background: #f4f4f4;
+    margin: 0;
+    color: #333;
+    text-align: center;
 }
 
+/* Header */
 header {
-     background: #5e00b5;
-     color:#fff ;
-     padding: 20px 0 10px 0;
-     text-align:center;
-     box-shadow: 0 2px 6px rgba(0,0,0,0.65);
+    background: #1a3f5c; /* celeste oscuro */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 header h1 {
-    margin: 0 0 10px 0;
-    font-size: 2em;  
+    margin: 0 0 15px 0;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 5px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-nav ul li {
-    display:inline;
-}
-nav ul a {
-    color:#fff;
+nav ul li a {
+    color: #fff;
     font-weight: 500;
     text-decoration: none;
-    transition: text-decoration 0.2s,color 0.2s;
+    transition: color 0.2s;
 }
 
-nav ul a:hover{
-    text-decoration: underline;
-    color: rgb(84, 5, 123)
+nav ul li a:hover {
+    color: #75a9c5; /* celeste más claro */
 }
+
+/* Main sections */
 main {
-    max-width: 700px;
-    margin: 40px auto 0 auto;
+    max-width: 900px;
+    margin: 40px auto;
     padding: 0 15px;
-
 }
+
 section {
     background: #fff;
     padding: 20px;
@@ -54,54 +54,58 @@ section {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     border-radius: 8px;
 }
+
 section h2 {
     margin-top: 0;
-    color: #5e00b5;
-    font: size 1.5em;
+    color: #1a3f5c; /* celeste oscuro */
+    font-size: 1.5em;
     margin-bottom: 18px;
 }
 
-.obraSocial{
-    display:flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Obra social */
+.obraSocial ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
+
 .obraSocial li {
-    background: #5e00b5;
-    border: 1px solid rgb(84, 5, 123);
+    background: #555; /* gris oscuro */
     border-radius: 5px;
     padding: 6px 12px;
-    color: #fff;    
-    font-weight: 400;
+    color: #fff;
+    font-weight: 500;
 }
-.catalogo {
-    background:none;
-    padding: 0;
-    margin-bottom: 0;
-    box-shadow: none;
-    border-radius:0;
-}
-.medicos{
+
+/* Médicos */
+.medicos {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
-    max-width: 700px;
     padding: 20px 0;
 }
+
 .medicos > div {
-    background: #fff;
-    border: 1px solid #6835ba;
-    border-radius:8px ;
+    background: #f0f4f7; /* gris claro */
+    border: 1px solid #1a3f5c;
+    border-radius: 8px;
     padding: 18px 22px;
-    box-sizing: border-box;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
+
 .medicos h3 {
     margin-top: 0;
-    color: #5e00b5;
-    font-size: 1.1em;
+    color: #1a3f5c;
+    font-size: 1.2em;
 }
-/* crear footer */
+
+/* Footer */
+footer {
+    background: #1a3f5c;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 40px;
+}
